@@ -20,3 +20,12 @@ Samozřejmě můžete své řešení rozšířit i o jiné fyzikální konstanty
 4. Vytvořte vlastní aplikaci myapp.py, do níž tento modul importujte. Demonstrujte v ní na jednoduchých příkladech využití vámi
 připravených funkcí.  
 '''
+
+def cas_volneho_padu(vyska):
+    return (2 * vyska / EARTH_GRAVITY) ** 0.5
+def vaha_na_mesici(vaha):
+    return vaha * MOON_GRAVITY / EARTH_GRAVITY
+def jak_dlouho_rychlosti_svetla(vzdalenost):
+    return vzdalenost / SPEED_OF_LIGHT
+def jak_dlouho_rychlosti_zvuku(vzdalenost):
+    return vzdalenost / SPEED_OF_SOUND
