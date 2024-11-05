@@ -310,5 +310,13 @@ persons += [('Jitka', 30, 'žena'), ('Marie', 35, 'žena'), ('Petr', 45, 'muž')
 women = [item[0] for item in persons if item[2] == 'žena']
 for i in women:
     print(f'{i}\n{"-" * len(i)}')
-ipeople = ', '.join([f'{index + 1};{item[0]};{item[1]};{item[2]}' for index, item in enumerate(sorted(persons, key=lambda item: item[1], reverse=True)) if 'i' in item[0]])
-print(ipeople)
+print("index;jmeno;vek;pohlavi")
+x = 0
+# for index, item in enumerate(sorted(persons, key=lambda item: item[1])):
+#     if 'i' in item[0]:
+#         print(f'{x};{item[0]};{item[1]};{item[2]}')
+#         x+=1
+for i in persons:
+    if 'i' in i[0]:
+        print(f'{x};{i[0]};{i[1]};{i[2]}')
+        x+=1
